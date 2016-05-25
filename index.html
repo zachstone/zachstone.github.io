@@ -1,37 +1,16 @@
 <html>
 <head>
-	<script src="pixel.js"></script>
-	<style>
-		body {
-			background-color: #ddd;
-			cursor: crosshair;
-		}
-
-		#content {
-			background-color: #eee;
-			padding: 2em;
-			width: 640px;
-			margin: auto;
-			box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-		}
-
-		#canvas {
-			background-color: #fff;
-			margin: auto;
-			box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
-		}
-	</style>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet">
 </head>
-
-<body oncontextmenu="return false;">
-	<div id="content">
-		<canvas id="canvas" width=640 height=640>Your browser does not support HTML Canvas.</canvas>
-		<br />
-		<p><input type="range" min=0 max=255 value=0 id="red"> red: <span id="redshow"></span></p>
-		<p><input type="range" min=0 max=255 value=0 id="green"> green: <span id="greenshow"></span></p>
-		<p><input type="range" min=0 max=255 value=0 id="blue"> blue: <span id="blueshow"></span></p>
-		<button id="clearButton">Clear Screen</button>
-		<button id="randomButton">Randomize</button>
-	</div>
+<body>
+  <div id="content">
+    <h1>My JavaScript Projects</h1>
+    <p>Roughly sorted by amount of polish.</p>
+    <a href="scheme/scheme.html">Scheme Interpreter</a> <br />
+    <a href="pixel/pixel.html">Pixel Editor</a> <br />
+    <a href="sound/sound.html">Color Piano</a> <br />
+    <a href="japanese/japanese.html">Japanese Verb Conjugator</a> <br />
+  </div>
 </body>
 </html>
