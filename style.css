@@ -1,34 +1,79 @@
-body {
-  background-color: #333;
-}
+@import url('https://fonts.googleapis.com/css?family=Quando');
 
-#content {
-  background-color: #444;
-  width: 56em;
-  margin: auto;
-  padding: 2em;
-  border-radius: 6px;
+:root {
+  /* God's Daughter color scheme */
+  --one: #62A07B;
+  --two: #4F8B89;
+  --three: #536C8D;
+  --four: #5C4F79;
+  --five: #613860;
+
+  --button-color: #34495e;
+  --button-shadow: #2c3e50;
+  --button-highlight: #e74c3c;
 }
 
 h1 {
-  color: #eee;
-  font-family: monospace;
+  text-align: center;
+  font-size: 4em;
+  color: var(--button-shadow);
 }
 
-p {
-  color: #ddd;
-  font-family: monospace;
-  font-size: 1.2em;
+body {
+  font-family: 'Quando';
+  background: #f0f0e8;
 }
 
-a:link {
-  color: #ff8f00;
-  font-family: monospace;
-  font-size: 1.2em;
+a {
+  margin: 0.5em;
 }
 
-a:visited {
-  color: #ff6f00;
-  font-family: monospace;
-  font-size: 1.2em;
+.block-wrapper {
+  margin: auto;
+  background: white;
+  border-radius: 0.3em;
+  box-shadow: 0px 4px #e0e0d8;
+  /* width: 28em; /* <- 4 blocks wide */
+  width: 21em;
+
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1em;
+}
+
+.social-block {
+  width: 6em;
+  height: 6em;
+  margin: 0em;
+  padding: 0em;
+  border-radius: 0.3em;
+  bottom: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: box-shadow 0.2s, bottom 0.2s;
+  background: var(--button-color);
+  box-shadow: 0px 4px var(--button-shadow);
+}
+
+.social-block:active {
+  transition: box-shadow 0s, bottom 0s;
+  bottom: 0px;
+  box-shadow: 0px 0px var(--button-shadow);
+}
+
+.social-block:hover .social-icon {
+  transition: color 0s;
+  color: var(--button-highlight);
+}
+
+.social-icon {
+  position: absolute;
+  font-size: 4em;
+  color: white;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-shadow: 0px -1px var(--button-shadow), 0px -2px var(--button-shadow);
+  transition: color 0.5s;
 }
