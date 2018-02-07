@@ -65,13 +65,13 @@ a {
 
 .block-column {
   text-align: center;
-  margin: 0rem;
+  margin: 0.5rem;
   background: white;
-  border-radius: 0.3em;
+  border-radius: 0.3rem;
   box-shadow: 0px 4px #e0e0d8;
   /* width: 28em; /* <- 4 blocks wide */
-  width: 21em;
-  padding: 1em;
+  flex-basis: 21rem;
+  padding: 1rem;
 }
 
 .block-wrapper {
@@ -115,4 +115,18 @@ a {
   transform: translate(-50%, -50%);
   text-shadow: 0px -1px var(--button-shadow), 0px -2px var(--button-shadow);
   transition: color 0.5s;
+}
+
+@media(max-width: 800px) {
+  .block-columns {
+    flex-direction: column;
+  }
+
+  .block-column {
+    flex-basis: 0;
+  }
+
+  .wrapper {
+    padding: 0em 0.5em;
+  }
 }
