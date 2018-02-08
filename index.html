@@ -1,82 +1,148 @@
 <html>
 <head>
-  <title>Zach Stone</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113779418-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-113779418-1');
+  </script>
+
+
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <title>Zach Stone</title>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   <link rel="stylesheet" href="./style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+  <script src="./scripts.js"></script>
 </head>
 <body>
   <div class="top-bar"></div>
   <div class="wrapper">
-    <h1>Zach Stone</h1>
-    <p>Hey, I'm Zach!</p>
+    <div id="bio">
+      <div>
+        <h1>Zach Stone</h1>
+        <p id="greeting">Hello</p>
+        <p>I'm a Boston-based full-stack web developer who strives for aesthetic and structural elegance in the software I create. My main technical interests include functional programming (Lisp!), signal processing, graph theory, and machine learning. But I'm also fascinated by natural languages, audio production, and digital art.</p>
 
-    <div class="block-columns">
-      <div class="block-column">
-        <h2>Functional</h2>
+        <p>Feel free to send me an <a id="e">email</a> for any projects, inquiries, or just to chat!</p>
+      </div>
+      <i class="fas fa-chevron-down down-arrow"></i>
+    </div>
 
-        <div class="block-wrapper">
-          <a href="https://github.com/zerovolts" title="GitHub">
-            <div class="social-block">
-                <i class="fa fa-github social-icon" aria-hidden="true"></i>
-            </div>
-          </a>
+    <div id="link-section">
+      <h2>Links</h2>
+      <div class="links">
+        <div class="link-block">
+          <h3>Functional</h3>
 
-          <a href="https://codepen.io/hex" title="CodePen">
-            <div class="social-block">
-              <i class="fa fa-codepen social-icon" aria-hidden="true"></i>
-            </div>
-          </a>
+          <div class="block-wrapper">
+            <a class="social-button" href="https://github.com/zerovolts" title="GitHub">
+              <div class="social-block">
+                  <i class="fab fa-github social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+
+            <a class="social-button" href="https://codepen.io/hex" title="CodePen">
+              <div class="social-block">
+                <i class="fab fa-codepen social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="link-block">
+          <h3>Social</h3>
+
+          <div class="block-wrapper">
+            <a class="social-button" href="https://linkedin.com/in/zerovolts" title="LinkedIn">
+              <div class="social-block">
+                <i class="fab fa-linkedin-in social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+
+            <a class="social-button" href="https://twitter.com/zero_volts" title="Twitter">
+              <div class="social-block">
+                <i class="fab fa-twitter social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+
+            <a class="social-button" href="https://facebook.com/hexaphixylix" title="Facebook">
+              <div class="social-block">
+                <i class="fab fa-facebook-f social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="link-block">
+          <h3>Creative</h3>
+
+          <div class="block-wrapper">
+            <a class="social-button" href="https://instagram.com/zerovolts" title="Instagram">
+              <div class="social-block">
+                <i class="fab fa-instagram social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+
+            <a class="social-button" href="https://soundcloud.com/zerovolts" title="SoundCloud">
+              <div class="social-block">
+                <i class="fab fa-soundcloud social-icon" aria-hidden="true"></i>
+              </div>
+            </a>
+
+            <a class="social-button" href="http://pixeljoint.com/p/26611.htm" title="PixelJoint">
+              <div class="social-block">
+                <i class="fa fa-th social-icon"></i>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
+    </div>
 
-      <div class="block-column">
-        <h2>Social</h2>
-
-        <div class="block-wrapper">
-          <a href="https://linkedin.com/in/zerovolts" title="LinkedIn">
-            <div class="social-block">
-              <i class="fa fa-linkedin social-icon" aria-hidden="true"></i>
-            </div>
+    <div class="project-section">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project-block">
+          <a href="https://github.com/zerovolts/kanjibenkyo" title="GitHub repository">
+            <div class="repo-button">GitHub <i class="fa fa-external-link-alt"></i></div>
           </a>
-
-          <a href="https://twitter.com/zero_volts" title="Twitter">
-            <div class="social-block">
-              <i class="fa fa-twitter social-icon" aria-hidden="true"></i>
-            </div>
+          <h3>kanjibenkyō</h3>
+          <a href="http://kanjibenkyo.com">
+            <img class="project-image" src="./images/kanjibenkyo.png"></img>
           </a>
-
-          <a href="https://facebook.com/hexaphixylix" title="Facebook">
-            <div class="social-block">
-              <i class="fa fa-facebook social-icon" aria-hidden="true"></i>
-            </div>
-          </a>
+          <p>Japanese language study application currently under development.</p>
         </div>
-      </div>
 
-      <div class="block-column">
-        <h2>Creative</h2>
-
-        <div class="block-wrapper">
-          <a href="https://instagram.com/zerovolts" title="Instagram">
-            <div class="social-block">
-              <i class="fa fa-instagram social-icon" aria-hidden="true"></i>
-            </div>
+        <div class="project-block">
+          <a href="https://github.com/zerovolts/gitquest" title="GitHub repository">
+            <div class="repo-button">GitHub <i class="fa fa-external-link-alt"></i></div>
           </a>
-
-          <a href="https://soundcloud.com/zerovolts" title="SoundCloud">
-            <div class="social-block">
-              <i class="fa fa-soundcloud social-icon" aria-hidden="true"></i>
-            </div>
+          <h3>GitQuest</h3>
+          <a href="http://gitquest.io">
+            <img class="project-image" src="./images/gitquest.png"></img>
           </a>
+          <p>Combines elements of gamification with the GitHub API in order to incentivize contibutions to open-source software.</p>
+        </div>
 
-          <a href="http://pixeljoint.com/p/26611.htm" title="PixelJoint">
-            <div class="social-block">
-              <i class="fa fa-th social-icon"></i>
-            </div>
+        <div class="project-block">
+          <a href="https://github.com/drewandre/reporev" title="GitHub repository">
+            <div class="repo-button">GitHub <i class="fa fa-external-link-alt"></i></div>
           </a>
+          <h3>RepoRev</h3>
+          <a href="http://reporev.herokuapp.com">
+            <img class="project-image" src="./images/reporev.png"></img>
+          </a>
+          <p>Group project for Launch Academy, where our aim was to make it possible to review GitHub repositories.</p>
         </div>
       </div>
     </div>
   </div>
+  <div id="footer">&copy; 2018 Zach Stone</div>
 </body>
