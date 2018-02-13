@@ -81,8 +81,8 @@ a {
 
 #bio-image {
   height: 100vh;
-  background-image: url("images/tokyo-infinity.jpg");
-  background-size: 100%;
+  background: url("images/tokyo-infinity.jpg") #222;
+  background-size: cover;
   filter: contrast(0.6) brightness(0.3);
 }
 
@@ -276,13 +276,18 @@ img.project-image:hover {
 @media(max-width: 800px) {
   h1 {
     margin-top: 2rem;
+    font-size: 2rem;
   }
 
   p {
     line-height: 1.7rem;
   }
 
-  #bio {
+  #bio-image {
+    min-height: 100vh;
+  }
+
+  #bio-copy {
     height: auto;
     padding: 0.5rem;
   }
@@ -322,5 +327,13 @@ img.project-image:hover {
 
   .down-arrow {
     visibility: hidden;
+  }
+
+  .link-slant {
+    border-bottom: 2rem solid #f0f0ed;
+  }
+
+  .footer-slant {
+    border-top: 2rem solid #f0f0ed;
   }
 }
