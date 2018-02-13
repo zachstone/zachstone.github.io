@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Quando");
+
 :root {
   /* God's Daughter color scheme */
   --one: #62A07B;
@@ -45,12 +47,14 @@ body {
 }
 
 h1 {
+  font-family: Quando;
   font-size: 3rem;
   margin: 0;
-  color: var(--font-color);
+  color: #eee;
 }
 
 h2 {
+  font-family: Quando;
   text-align: center;
   margin-bottom: 1rem;
   margin-top: 3rem;
@@ -92,18 +96,26 @@ a {
   align-items: center;
 }
 
-h1 {
-  color: #eee;
+.bio-link {
+  font-size: 2.5rem;
 }
 
 #link-section {
+  position: relative;
+  z-index: 10;
   padding: 3rem 2rem;
   background: #34495e;
+  box-shadow: 0 -4px 4px 0px #111;
 }
 
 #link-section h2 {
   margin: 1rem;
   color: white;
+}
+
+.link-slant {
+  border-bottom: 6rem solid #f0f0ed;
+  border-left: 100vw solid #34495e;
 }
 
 #project-section {
@@ -209,6 +221,7 @@ h1 {
   flex-basis: 32rem;
   padding: 1rem;
   padding-bottom: 2rem;
+  border: 1px solid #e0e0d8;
 }
 
 .repo-button {
@@ -247,12 +260,17 @@ img.project-image:hover {
   left: 0;
   right: 0;
   height: 1rem;
-  background: #2c3e50;
-  margin-top: 1rem;
+  background: #34495e;
+  /*margin-top: 1rem;*/
 
   font-size: 0.75rem;
   color: var(--background-color);
   text-align: center;
+}
+
+.footer-slant {
+  border-top: 6rem solid #f0f0ed;
+  border-right: 100vw solid #34495e;
 }
 
 @media(max-width: 800px) {
