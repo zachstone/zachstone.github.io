@@ -11,16 +11,16 @@ const u = "zach"
 const d = "zerovolts"
 
 document.addEventListener("DOMContentLoaded", () => {
-  const greeting = document.getElementById("greeting")
+  const greeting = document.getElementsByClassName("greeting")[0]
   const e = document.getElementById("e")
 
   e.href = "mailto:" + u + "@" + d + ".com"
 
   setInterval(() => {
-    greeting.className = "hidden"
+    greeting.className = "greeting hidden"
 
     setTimeout(() => {
-      greeting.className = ""
+      greeting.className = "greeting"
       greeting.innerHTML = greetings[greetingCounter]
       greetingCounter += 1
 
