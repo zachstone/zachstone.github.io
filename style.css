@@ -75,13 +75,19 @@ ul li:before {
 main {
     display: flex;
     flex-direction: column;
-    /* padding: 4rem; */
     max-width: 600px;
-
     margin: 2rem;
     padding: 2rem;
     background: white;
     border-radius: 5px;
+}
+
+@media (max-width: calc(600px + 8rem)) {
+    main {
+        margin: 0;
+        padding: 4rem;
+        border-radius: 0;
+    }
 }
 
 main > * {
@@ -126,6 +132,8 @@ header:last-child {
 
 nav {
     display: flex;
+    flex-direction: row;
+    overflow: wrap;
 }
 
 nav > * {
